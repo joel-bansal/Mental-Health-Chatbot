@@ -1,0 +1,14 @@
+streamlit
+google-generativeai
+PyPDF2
+PyYAML
+requests
+pillow
+scikit-learn
+numpy
+langchain
+python-dotenv
+streamlit-webrtc
+SpeechRecognition
+pyttsx3
+pandas
