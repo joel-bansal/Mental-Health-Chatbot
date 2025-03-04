@@ -2,7 +2,7 @@
 
 ## Elle 💙 - Mental Health Companion & Knowledge Base
 
-### ML - FOCUS ROLE
+### ML - FOCUS SUBMISSION
 
 ### Project Overview
 Elle is a multi-modal mental health AI assistant built using **LangChains agentic workflow**, while also providing a knowledge base for document-based question answering. Built for the **Sarvam AI Litmus Test (ML Focus)**, Elle demonstrates advanced LLM integration techniques with a focus on **context management, multi-modal interactions, and specialized domain adaptation**.
