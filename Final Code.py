@@ -37,7 +37,7 @@ _ = load_dotenv(find_dotenv())
 # Configure Gemini API
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
-    api_key = "AIzaSyCcWxgiWkDyBnBT-rwoMTT1O_UOeV_kaVw"
+    api_key = "GEMINI API"
     
 genai.configure(api_key=api_key)
 
@@ -218,7 +218,7 @@ def save_conversation_summary(user_id, summary, therapy_types=None):
         return False
 
 # Load prompts from YAML
-def load_prompts(file_path='H:\Project Session\Sarvam AI Task\Project Sukoon\prompts.yaml'):
+def load_prompts(file_path='prompts.yaml'):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
