@@ -53,7 +53,10 @@ The Knowledge Base component demonstrates advanced **RAG techniques**:
 - **Similarity Search:** Vector-based retrieval using cosine similarity.
 - **Context-Enhanced Generation:** Combines retrieved chunks with user queries for accurate answers.
 
+  ![image](https://github.com/user-attachments/assets/e73d56d7-b36e-4df7-acbc-a7367e62108b)
+
 ---
+
 
 ## Technical Architecture
 
@@ -75,24 +78,55 @@ The Knowledge Base component demonstrates advanced **RAG techniques**:
   - Text-to-speech (pyttsx3)
   - Image suggestion (Gemini + Unsplash)
 
+  ![image](https://github.com/user-attachments/assets/fa8b9f7c-0b45-4922-99d8-c8fc0b2fd466)
+
+
 ### ML Models Used
 - **Gemini 1.5 Pro:** Main conversation model for therapeutic responses.
 - **Gemini 1.5 Flash:** Knowledge base query processing for faster document Q&A.
 - **Gemini Embedding Model:** Document and query embedding for semantic search.
 - **Google Speech Recognition:** Converting speech to text.
 
+### Failure Handling
+- **Document Loading Error:** The LLM has generates error message and asks the user to re-upload the documents ```prompts.yaml``` and the ```pdf``` file, otherwise it shifts to the default settings.
+- **Hallucinations:** The Chatbot is well prompted in ```prompts.yaml``` to cover all types of test cases so as to avoid hallucinations.
+- **Voice Problem:** The chatbot displays what-ever it could hear before generating the response so the user know that he is getting the correct response.
+
 ---
 
 ## Evaluation and Performance Optimization
 
-- **Therapy Type Tracking:** Monitoring which therapeutic approaches are used most frequently.
-- **Session Summary Analysis:** Automatic generation of session insights.
-- **Error Handling:** Robust exception handling throughout the pipeline.
-- **Caching Strategy:** Embeddings cached in session state for repeated queries.
+**evaluation_scores.py**
+
+![image](https://github.com/user-attachments/assets/36f44a53-2c89-44f0-8faa-eebbb372aedb)
+### This evaluation script provides:
+
+**Multi-dimensional Analysis:**
+
+ - Semantic coherence through embeddings
+ - Therapeutic approach detection
+ - Safety and ethics compliance
+ - Empathy measurement
+ - Sentiment appropriateness
+ - Response personalization
+
+![image](https://github.com/user-attachments/assets/699a5f4a-b359-4be6-b97b-d2ef95ac546f)
+
+
+**Visual Reporting:**
+
+Quality trends across conversation
+Therapy approach distribution
+Sentiment analysis
+Empathy and personalization tracking
+Safety disclaimer detection for sensitive topics
+Appropriate therapeutic language analysis
+Non-directive language assessment
+Non-judgmental language detection
 
 ---
 
-### Scalability Considerations
+## Scalability Considerations
 Elle’s architecture supports scaling through:
 
 - **Stateless Design:** Core processing is stateless and can be horizontally scaled.
@@ -102,22 +136,21 @@ Elle’s architecture supports scaling through:
 
 ---
 
-## Future Enhancements
+## Cost Considerations
 
-- **Model Distillation:** Creating specialized smaller models for each therapy type.
-- **Response Quality Metrics:** Implementing feedback loops for response quality.
-- **Streaming Responses:** Adding incremental response rendering.
-- **Advanced RAG:** Implementing hybrid search with metadata filtering.
-- **Custom Fine-tuning:** Developing specialized models for mental health support.
+The **Gemini API** has **free and paid tiers**:  
 
----
+- **Free Tier**: Limited rate, good for testing.  
+- **Paid Tier** (cost per million tokens):  
+  - **Gemini 2.0 Flash**:  
+    - Input: **$0.10** | Output: **$0.40**  
+  - **Gemini 2.0 Flash-Lite**:  
+    - Input: **$0.075** | Output: **$0.30**  
+  - **Imagen 3 (Image Gen)**: **$0.03 per image**  
+  - **Context Caching**: **$0.025 per million tokens**  
+  - **Google Search Grounding**: Free for **1,500 req/day**, then **$35 per 1,000 req**  
 
-## ML Research Innovations
-
-- **Contextual Therapy Routing:** Automatic selection of therapeutic approach based on semantic content.
-- **Multi-Modal Therapeutic Experience:** Combining text, speech, and images for holistic support.
-- **Memory Summarization:** Using LLMs to distill conversation into meaningful context.
-- **Domain-Specific RAG:** Knowledge base tailored for mental health resources.
+For exact details, check **Google’s official pricing page** under the Gemini API documentation.
 
 ---
 
