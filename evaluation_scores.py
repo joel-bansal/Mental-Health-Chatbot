@@ -316,7 +316,7 @@ class LLMResponseEvaluator:
 
 # Usage example
 if __name__ == "__main__":
-    api_key = "AIzaSyAFj631LAq53alyoFYWX35EwLdFMFivJy4"  # Replace with your API key
+    api_key = "YOUR API KEY"  # Replace with your API key
     evaluator = LLMResponseEvaluator(api_key)
     
     # Example conversation (from session state messages)
