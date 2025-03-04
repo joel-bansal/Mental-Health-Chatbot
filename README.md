@@ -9,6 +9,8 @@ Elle is a multi-modal mental health AI assistant built using **LangChains agenti
 
 ![image](https://github.com/user-attachments/assets/5cff3bff-b7bb-4c2b-bd9f-1bc13e1c801e)
 
+#### More Images/Videos in ```Images``` folder
+
 
 ---
 
