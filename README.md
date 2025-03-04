@@ -20,6 +20,13 @@ Elle is a multi-modal mental health AI assistant built using **LangChains agenti
 - **Gemini API key** to be updated in Line 40 of FINAL_CODE.py
 - Run the application: ```streamlit run Final_Code.py```
 
+  ### File Sturcture
+- **Images:** Contains additional images/videos
+- **Final_Code.py:** Complete Code
+- **Evaluation_scores.py** Evaluation of Elle's output
+- **promtps.yaml:** Contains prompts of agents
+- **respones.csv:** Contains summary of user's interaction with the bot
+
 ---
 
 ## Key ML/AI Features
