@@ -22,13 +22,101 @@ Elle is a multi-modal mental health AI assistant built using **LangChains agenti
 - **Gemini API key** to be updated in Line 40 of FINAL_CODE.py
 - Run the application: ```streamlit run Final_Code.py```
 
-  ### File Sturcture
+### File Sturcture
 - **Images:** Contains additional images/videos
 - **Final_Code.py:** Complete Code
 - **Evaluation_scores.py** Evaluation of Elle's output
 - **promtps.yaml:** Contains prompts of agents
 - **respones.csv:** Contains summary of user's interaction with the bot
 
+## Flow Chart
+### Mental Health Chatbot Part
+  ```
+  graph TD
+    A[User Input] --> B{Input Type}
+    B -->|Text| C[Text Processing]
+    B -->|Speech| D[Speech Recognition]
+    D --> C
+    C --> E{Therapy Approach Selection}
+    E -->|General Emotional Support| F[Empathetic Agent]
+    E -->|Suicide Prevention| G[Suicide Prevention Agent]
+    E -->|Anger Management| H[Anger Management Agent]
+    E -->|Motivational Support| I[Motivational Agent]
+    E -->|Dialectical Behavior Therapy| J[DBT Agent]
+    E -->|Cognitive Behavioral Therapy| K[CBT Agent]
+    F --> L[Generate Response]
+    G --> L
+    H --> L
+    I --> L
+    J --> L
+    K --> L
+    L --> M{Multi-Modal Output}
+    M -->|Text| N[Display Text Response]
+    M -->|Image| O[Generate and Display Image]
+    M -->|Speech| P[Text-to-Speech Conversion]
+    N --> Q[Update Conversation History]
+    O --> Q
+    P --> Q
+    Q --> R[Store Conversation Summary]
+    R --> S[Save to responses.csv]
+    Q --> T[Display Response to User]
+
+  ```
+### RAG PART
+
+```
+graph TD
+    A[User Input] --> B{Input Type}
+    B -->|Text| C[Text Processing]
+    B -->|Speech| D[Speech Recognition]
+    D --> C
+    C --> E{Therapy Approach Selection}
+    E -->|General Emotional Support| F[Empathetic Agent]
+    E -->|Suicide Prevention| G[Suicide Prevention Agent]
+    E -->|Anger Management| H[Anger Management Agent]
+    E -->|Motivational Support| I[Motivational Agent]
+    E -->|Dialectical Behavior Therapy| J[DBT Agent]
+    E -->|Cognitive Behavioral Therapy| K[CBT Agent]
+    F --> L[Generate Response]
+    G --> L
+    H --> L
+    I --> L
+    J --> L
+    K --> L
+    L --> M{Multi-Modal Output}
+    M -->|Text| N[Display Text Response]
+    M -->|Image| O[Generate and Display Image]
+    M -->|Speech| P[Text-to-Speech Conversion]
+    N --> Q[Update Conversation History]
+    O --> Q
+    P --> Q
+    Q --> R[Store Conversation Summary]
+    R --> S[Save to responses.csv]
+    Q --> T[Display Response to User]
+```
+### Evaluation Part
+
+```
+graph TD
+    A[User Input and Response] --> B[Evaluate Coherence]
+    A --> C[Evaluate Sentiment]
+    A --> D[Detect Therapy Approach]
+    A --> E[Evaluate Safety]
+    A --> F[Evaluate Empathy]
+    A --> G[Evaluate Response Length]
+    A --> H[Evaluate Personalization]
+    B --> I[Compile Evaluation Results]
+    C --> I
+    D --> I
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+    I --> J[Calculate Quality Score]
+    J --> K[Store Evaluation Results]
+    K --> L[Generate Evaluation Report]
+    L --> M[Save Report as PDF and JSON]
+```
 ---
 
 ## Key ML/AI Features
