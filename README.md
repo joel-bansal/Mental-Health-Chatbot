@@ -53,6 +53,7 @@ The Knowledge Base component demonstrates advanced **RAG techniques**:
 - **Similarity Search:** Vector-based retrieval using cosine similarity.
 - **Context-Enhanced Generation:** Combines retrieved chunks with user queries for accurate answers.
 
+
   ![image](https://github.com/user-attachments/assets/e73d56d7-b36e-4df7-acbc-a7367e62108b)
 
 ---
