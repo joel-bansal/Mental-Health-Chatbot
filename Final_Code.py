@@ -27,7 +27,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Fix the experimental_rerun deprecation
 def rerun():
     st.rerun()  # Use st.rerun() instead of st.experimental_rerun()
 
@@ -37,7 +36,7 @@ _ = load_dotenv(find_dotenv())
 # Configure Gemini API
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
-    api_key = "AIzaSyAFj631LAq53alyoFYWX35EwLdFMFivJy4"
+    api_key = "GEMINI API"
     
 genai.configure(api_key=api_key)
 
