@@ -1,5 +1,11 @@
 user_id,timestamp,therapy_type,summary
-f9c2364a,2025-03-04 19:34:55,General Emotional Support,"The user initiates contact with the AI mental health assistant, but expresses uncertainty and possible insecurity by questioning whether the assistant knows them.  No emotional themes or progress are evident beyond this initial expression of potential vulnerability.
-"
 f9c2364a,2025-03-04 19:35:04,General Emotional Support,"The user initiates contact with the AI mental health assistant, but expresses uncertainty and possible insecurity by questioning whether the assistant knows them.  No emotional themes or progress are evident beyond this initial expression of potential vulnerability.
+"
+46d4ba7d,2025-03-04 20:13:17,Motivation & Depression Support,"The user expresses sadness and a lack of motivation, specifically mentioning academic struggles. The AI provides validation and encouragement, focusing on small, achievable steps towards improvement. While the user's underlying reasons for sadness aren't fully explored, the conversation initiates acknowledgement of the issue and emphasizes the user's capacity for progress.
+"
+51864d7c,2025-03-04 20:15:27,General Emotional Support,"The user expressed distress over relationship issues. The AI acknowledged the user's feelings, offered support, and provided contact information for professional mental health resources.  The user then requested relationship advice.  The main themes are relationship difficulties and a desire for improvement.  No significant progress was made in addressing the user's specific relationship problems, but the conversation initiated help-seeking behavior.
+"
+f9c2364a,2025-03-04 20:16:00,General Emotional Support,"The user expresses uncertainty and possible insecurity by questioning whether the assistant knows them.  The AI provides validation and reassurance, emphasizing the user's value and the importance of self-care. The conversation focuses on building self-esteem and coping strategies. The user expresses gratitude and a desire to continue the conversation in the future.
+"
+46d4ba7d,2025-03-04 20:16:00,Motivation & Depression Support,"The user expresses sadness and a lack of motivation, specifically mentioning academic struggles. The AI provides validation and encouragement, focusing on small, achievable steps towards improvement. The user expresses gratitude and a desire to continue the conversation in the future. The conversation emphasizes the user's capacity for progress and the importance of self-care.
 "
