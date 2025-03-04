@@ -159,3 +159,6 @@ For exact details, check **Google’s official pricing page** under the Gemini A
 
 ### Developed by Joel Bansal for the **Sarvam AI Litmus Test - ML Focus**
 
+Image Credits: My StreamLit interface
+Elle/User Logo: Github/Google
+
